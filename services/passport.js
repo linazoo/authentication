@@ -17,6 +17,7 @@ const localLogin = new LocalStrategy(localOptions, function(email, password, don
     if(!user) { return done(null, false);}
   
   // compare passwords - is 'password' = to user.password?
+  
   });
 });
 
