@@ -11,6 +11,7 @@ exports.signin = function(req, res, next) {
   //user has already had their email and password auth'd
 
   //we just need to give them a token 
+  res.send({ token: tokenForUser(req.user) });
 }
 
 exports.signup = function(req, res, next) {
